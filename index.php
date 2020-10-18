@@ -4,11 +4,11 @@
 	<head>
 		<title>IP_calculate</title>
 
-		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  		<meta name="GENERATOR" content="Quanta Plus">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
 		<link rel="stylesheet" href="lib/css/reset.css"> <!-- CSS reset -->
 		<link rel="stylesheet" href="lib/css/style.css"> <!-- Resource style -->
 
@@ -19,7 +19,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header>	
 			<nav class="cd-main-nav-wrapper">
 				<ul class="cd-main-nav">
 					<li><a href="#0">IPv4</a></li>
@@ -30,7 +30,9 @@
 						<ul>
 							<li class="go-back"><a href="#0">Language</a></li>
 							<li><a href="#0">English</a></li>
+							<li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li>
 							<li><a href="#0">Russian</a></li>
+							<li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li><li><a></a></li>
 							<li><a href="#0" class="placeholder">Placeholder</a></li>
 						</ul>
 					</li>
@@ -56,7 +58,13 @@
 				            &nbsp;</td>
 				  </tr>
 				</table></form><br>
-				<?php
+	<?php
+		// Вывод заголовка с данными о кодировке страницы
+		#header('Content-Type: text/html; charset=utf-8');
+		// Настройка локали
+		##setlocale(LC_ALL, 'ru_RU.65001', 'rus_RUS.65001', 'Russian_Russia. 65001', 'russian');
+		// Настройка подключения к базе данных
+		##mysql_query('SET names "utf8"');
 		//Start table
 		print "<table cellpadding=\"2\">\n<COL span=\"4\" align=\"left\">\n" ;
 
@@ -160,17 +168,17 @@
 
 		// Print Results
 
-		echo '<br> Ââåäåííûé àäðåñ: <b>' ,"$dq_host",'</b>';
-		echo '<br> Äëèíà ìàñêè ñåòè (CIDR): /<b>' ,"$cdr_nmask",'</b>';
-		echo '<br> Äàííûå:';
-		echo '<br> Ìàñêà ïîäñåòè: <b>' ,''.bintodq($bin_nmask)."",'</b>';
-		echo '<br> Àäðåñ ñåòè: <b>',''.bintodq($bin_net).'','</b>';
-		echo '<br> Àäðåñ øëþçà ïî óìîë÷àíèþ (default gateway): <b>' ,''.bintodq($bin_first).'','</b>';
-		echo '<br> Ìèíèìàëüíûé IP íà ñòîðîíå êëèåíòà: <b>' ,''.bintodq($bin_first_client).'','</b>';
-		echo '<br> Ìàêñèìàëüíûé IP íà ñòîðîíå êëèåíòà: <b>' ,''.bintodq($bin_last).'','</b>';
-		echo '<br> Àäðåñ øèðîêîâåùàòåëüíîé ðàññûëêè (broadcast): <b>' ,''.bintodq($bin_bcast).'','</b>';
-		echo '<br> Êîëè÷åñòâî ïóáëè÷íûõ àäðåñîâ ñåòè: <b>' ,"$host_total",'</b>';
-		echo '<br> Êîëè÷åñòâî ïóáëè÷íûõ àäðåñîâ íà ñòîðîíå êëèåíòà: <b>' ,"$host_total"-1,'</b>';
+		echo '<br> Введенный адрес: <b>' ,"$dq_host",'</b>';
+		echo '<br> Длина маски сети (CIDR): /<b>' ,"$cdr_nmask",'</b>';
+		echo '<br> Данные:';
+		echo '<br> Маска подсети: <b>' ,''.bintodq($bin_nmask)."",'</b>';
+		echo '<br> Адрес сети: <b>',''.bintodq($bin_net).'','</b>';
+		echo '<br> Адрес шлюза по умолчанию (default gateway): <b>' ,''.bintodq($bin_first).'','</b>';
+		echo '<br> Минимальный IP на стороне клиента: <b>' ,''.bintodq($bin_first_client).'','</b>';
+		echo '<br> Максимальный IP на стороне клиента: <b>' ,''.bintodq($bin_last).'','</b>';
+		echo '<br> Адрес широковещательной рассылки (broadcast): <b>' ,''.bintodq($bin_bcast).'','</b>';
+		echo '<br> Количество публичных адресов сети: <b>' ,"$host_total",'</b>';
+		echo '<br> Количество публичных адресов на стороне клиента: <b>' ,"$host_total"-1,'</b>';
 
 
 
