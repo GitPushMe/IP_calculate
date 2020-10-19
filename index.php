@@ -59,12 +59,7 @@
 				  </tr>
 				</table></form><br>
 	<?php
-		// Вывод заголовка с данными о кодировке страницы
-		#header('Content-Type: text/html; charset=utf-8');
-		// Настройка локали
-		##setlocale(LC_ALL, 'ru_RU.65001', 'rus_RUS.65001', 'Russian_Russia. 65001', 'russian');
-		// Настройка подключения к базе данных
-		##mysql_query('SET names "utf8"');
+				
 		//Start table
 		print "<table cellpadding=\"2\">\n<COL span=\"4\" align=\"left\">\n" ;
 
@@ -134,7 +129,7 @@
 		$bin_bcast=(str_pad(substr($bin_host,0,$cdr_nmask),32,1));
 		$bin_net=(str_pad(substr($bin_host,0,$cdr_nmask),32,0));
 		$bin_first=(str_pad(substr($bin_net,0,31),32,1));
-		//$bin_first_client=(str_pad(substr($bin_first,0,31),32,1));
+		$bin_first_client=(str_pad(substr($bin_first,0,31),32,1));
 		$bin_last=(str_pad(substr($bin_bcast,0,31),32,0));
 		$host_total=(bindec(str_pad("",(32-$cdr_nmask),1)) - 1);
 
