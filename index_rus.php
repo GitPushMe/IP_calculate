@@ -20,23 +20,6 @@
 		<script src="lib/js/modernizr.js"></script> <!-- Modernizr -->
 		<script src="lib/js/jquery-2.1.1.js"></script>
 		<script src="lib/js/main.js"></script> <!-- Resource jQuery -->
-
-		<script type="text/javascript">
-
-			$(document).ready(function () {
-			    $("a").click(function () {
-			        var elementClick = $(this).attr("href");
-			        var destination = $(elementClick).offset().top;
-			        if ($.browser.family === 'Yandex') {
-			            $('body').animate({ scrollTop: destination }, 100); //1100 - скорость прокрутки
-			        } else {
-			            $('html').animate({ scrollTop: destination }, 100);
-			        }
-			        return false; 
-			    });
-			});
-
-		</script>
   	
 	</head>
 
@@ -46,9 +29,9 @@
 			<nav class="cd-main-nav-wrapper">
 				<ul class="cd-main-nav">
 					<li><img src="img/icon.jpg" width="50" height="50"></li>-->	
-					<li><a href="index.php">IP калькулятор</a></li>
+					<li><a href="index_rus.php">IP калькулятор</a></li>
 					<li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li>
-					<li><a href="#botDiv">IPv4</a></li>
+					<li><a href="#0">IPv4</a></li>
 					<li><a href="#0">IPv6</a></li>
 					<li><a href="#0">Блог</a></li>
 					<li>
@@ -67,16 +50,14 @@
 		</header>
 	
 		<main class="cd-main-content">
-
 			<!-- main content here -->
 		<?php 
-				ini_set('display_errors', 'off');
+
 				session_start();
 
 				if (!empty($_SESSION['login'])){
 
-					echo ('Здравствуйте, <b>'. $_SESSION['login'].'</b>. <BR> Вы авторизированы и можете работать на сайте.');
-					echo ('<input type="submit" value="Выход" name="exit">');
+					echo ('Здравствуйте, '. $_SESSION['login'].'. <BR> Вы авторизированы и можете работать на сайте.');
 
  				}
 
@@ -85,14 +66,6 @@
 					echo ("Здравствуйте, Гость.");
 						
  				}
-
- 				if(isset($_POST['exit'])){
-
- 					unset($_SESSION['userid']);
- 					session_destroy();
- 					
- 				}
-
 				
 			echo '<br><h1>Инфо</h1><br>
 
@@ -104,29 +77,27 @@
 
 				<br><h1>Резервация адресов для особых функций</h1><br>
 
-Имеется ряд IPv4 адресов, сохраненных для определенных задач. Они не используются для глобальной маршрутизации. К функциям, которые выполняются с их помощью, относится создание сокетов IP, обеспечение коммуникаций внутри хоста, многоадресная рассылка, регистрация адресов, имеющих специальное назначение, и др. Эти адреса могут быть использованы в частных сетях, в провайдерских сетях. Часть из них сохранена для последующего использования.<br>';	?>
+Имеется ряд IPv4 адресов, сохраненных для определенных задач. Они не используются для глобальной маршрутизации. К функциям, которые выполняются с их помощью, относится создание сокетов IP, обеспечение коммуникаций внутри хоста, многоадресная рассылка, регистрация адресов, имеющих специальное назначение, и др. Эти адреса могут быть использованы в частных сетях, в провайдерских сетях. Часть из них сохранена для последующего использования.<br>
+TEST 
+wf
+wordwrap(fe==)';	?>
 			<center>
 					<form method="post" action="<?php print $_SERVER['PHP_SELF'] ?> ">
 					<BR><BR>
-
 					<table width="95%" align=center cellpadding=2 cellspacing=2 border=0>
 
 					<BR>
 					<table>
 					  <tr>
-					        <td><b>IP адрес и Маска сети  или безклассовый адрес (CIDR):</b>&nbsp;&nbsp;<br> </td>
+					        <td>IP адрес и Маска сети  или безклассовый адрес (CIDR):&nbsp;&nbsp;<br> </td>
 					        <td><input type="text" name="my_net_info" value="" size="31" maxlength="32"></td>
 					        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Start" name="subnetcalc">
 					            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					            &nbsp;</td>
 					  </tr>
-					</table>
-					<a href="#topDiv"></a>
-					<div id="botDiv"></div>
-				</form><br>
+					</table></form><br>
 				<?php require_once ("main_rus.php");?>		
 			</main>
-
 			
 	</body>
 
