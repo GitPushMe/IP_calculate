@@ -15,7 +15,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Times New Roman', serif;
   color: #33414a;
   background-color: #f2f2f2;
 }
@@ -52,6 +52,9 @@ header {
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
+
+
+
 header.nav-is-visible {
   -webkit-transform: translateX(-260px);
   -moz-transform: translateX(-260px);

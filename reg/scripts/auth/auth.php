@@ -49,7 +49,7 @@
 
 				
 				//Сбрасываем параметры
-				header('Location:'. BEZ_HOST .'calculate/index_rus.php');
+				header('Location:'. BEZ_HOST .'calculate/index.php');
 				exit;
 			}
 			else

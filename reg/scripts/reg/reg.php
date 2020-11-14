@@ -126,16 +126,16 @@
 								)';
 				$res = mysqlQuery($sql);
 				
-				//Отправляем письмо для активации
+				/*//Отправляем письмо для активации
 				$url = BEZ_HOST .'?mode=reg&key='. md5($salt);
 				$title = 'Регистрация на http://bezramok-tlt.ru';
 				$message = 'Для активации Вашего акаунта пройдите по ссылке 
 				<a href="'. $url .'">'. $url .'</a>';
 				
-				sendMessageMail($_POST['email'], BEZ_MAIL_AUTOR, $title, $message);
+				sendMessageMail($_POST['email'], BEZ_MAIL_AUTOR, $title, $message);*/
 				
 				//Сбрасываем параметры
-				header('Location:'. BEZ_HOST .'?mode=reg&status=ok');
+				header('Location:'. BEZ_HOST .'?mode=auth');
 				exit;
 			}
 		}
