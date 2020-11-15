@@ -53,7 +53,7 @@
 					<li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li>
 					<li><a href="ipv4.php">IPv4 калькулятор</a></li>
 					<li><a href="ipv6.php">IPv6 калькулятор</a></li>
-					<li><a href="blog_eng.php">Блог</a></li>
+					<li><a href="blog_rus.php">Блог</a></li>
 					<li>
 						<a href="#0" class="cd-subnav-trigger"><span>Языковое меню</span></a>
 						<ul>
