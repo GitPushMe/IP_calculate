@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="lib/css/style.css"> <!-- Resource style -->
 		<link rel="stylesheet" href="lib/css/style_table.css"> <!-- Resource style -->
 
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 		<script src="lib/js/modernizr.js"></script> <!-- Modernizr -->
 		<script src="lib/js/jquery-2.1.1.js"></script>
 		<script src="lib/js/main.js"></script> <!-- Resource jQuery -->
