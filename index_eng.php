@@ -203,10 +203,6 @@ The bits at the beginning indicate the network class. If the network is located 
 		<br><hr>
 
 		<center>
-<<<<<<< HEAD
-=======
-				
->>>>>>> romandr
 
 					<a href="#topDiv"></a>
 					<div id="botDiv"></div>
