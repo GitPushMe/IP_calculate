@@ -48,11 +48,11 @@
 			<nav class="cd-main-nav-wrapper">
 				<ul class="cd-main-nav">
 					<li><img src="img/icon.jpg" width="50" height="50"></li>-->	
-					<li><a href="index.php">IP калькулятор</a></li>
+					<li><a href="index.php">Главная</a></li>
 					<li><a href="reg/?mode=reg#toregister">Регистрация/Авторизация</a></li>
 					<li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li>
-					<li><a href="ipv4.php">IPv4</a></li>
-					<li><a href="ipv6.php">IPv6</a></li>
+					<li><a href="ipv4.php">IPv4 калькулятор</a></li>
+					<li><a href="ipv6.php">IPv6 калькулятор</a></li>
 					<li><a href="blog_eng.php">Блог</a></li>
 					<li>
 						<a href="#0" class="cd-subnav-trigger"><span>Языковое меню</span></a>
