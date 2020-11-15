@@ -52,8 +52,8 @@
 					<li><a href="index_eng.php">Main</a></li>
 					<li><a href="reg/?mode=reg#toregister">Registration/Authorization</a></li>
 					<li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li>
-					<li><a href="ipv4_eng.php">IPv4 calc</a></li>
-					<li><a href="ipv6_eng.php">IPv6 calc</a></li>
+					<li><a href="ipv4_eng.php">IPv4 calculator</a></li>
+					<li><a href="ipv6_eng.php">IPv6 calculator</a></li>
 					<li><a href="blog_eng.php">Blog</a></li>
 					<li>
 						<a href="#0" class="cd-subnav-trigger"><span>Language menu</span></a>
