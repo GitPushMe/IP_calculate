@@ -49,11 +49,11 @@
 			<nav class="cd-main-nav-wrapper">
 				<ul class="cd-main-nav">
 					<li><img src="img/icon.jpg" width="50" height="50"></li>-->
-					<li><a href="index_eng.php">IP calculate</a></li>
+					<li><a href="index_eng.php">Main</a></li>
 					<li><a href="reg/?mode=reg#toregister">Registration/Authorization</a></li>
 					<li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li><li><a href="#0"></a></li>
-					<li><a href=#botDiv>IPv4</a></li>
-					<li><a href="#0">IPv6</a></li>
+					<li><a href="ipv4_eng.php">IPv4 calc</a></li>
+					<li><a href="ipv6_eng.php">IPv6 calc</a></li>
 					<li><a href="blog_eng.php">Blog</a></li>
 					<li>
 						<a href="#0" class="cd-subnav-trigger"><span>Language menu</span></a>
