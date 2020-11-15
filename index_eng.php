@@ -178,31 +178,35 @@ The bits at the beginning indicate the network class. If the network is located 
 			</tbody>
 		</table>
 
-		<center><p id="tree">Зарезервированные адреса, которые маршрутизируются глобально:</p></center>
+		<p id="tree"><center>Reserved addresses that are routed globally:</center></p>
 		
 		<table class="iksweb">
 			<tbody>
 				<tr>
-					<td><b>Подсеть</b></td>
-					<td><b>Назначение</b></td>
+					<td><b>Subnet</b></td>
+					<td><b>Assignment</b></td>
 				</tr>
 				<tr>
 					<td>192.88.99.0/24</td>	
-					<td>Используются для рассылки ближайшему узлу. Адрес 192.88.99.0/32 применяется в качестве ретранслятора при инкапсуляции IPv6 в IPv4 (6to4)</td>
+					<td>Used for mailing to the nearest node. The address 192.88.99.0/32 is used as a relay when IPv6 is encapsulated in IPv4 (6to4)</td>
 				</tr>
 				<tr>
 					<td>224.0.0.0/4</td>	
-					<td>Используются для многоадресной рассылки.</td>
+					<td>Used for multicast.</td>
 				</tr>
 
 		</table>
 		<center>
-		<h1>Как рассчитать сеть при помощи калькулятора</h1>
-		<p id="two"> Имеется ряд IPv4 адресов, сохраненных для определенных задач. Они не используются для глобальной маршрутизации. К функциям, которые выполняются с их помощью, относится создание сокетов IP, обеспечение коммуникаций внутри хоста, многоадресная рассылка, регистрация адресов, имеющих специальное назначение, и др. Эти адреса могут быть использованы в частных сетях, в провайдерских сетях. Часть из них сохранена для последующего использования:</p2> </center>
+		<h1>How to calculate a network using a calculator</h1>
+		<p id="two"> There are a number of IPv4 addresses saved for specific tasks. They are not used for global routing. The functions that are performed with their help include creating IP sockets, providing communications within the host, multicasting, registering addresses that have a special purpose, and others. These addresses can be used in private networks, in provider networks. Some of them are saved for later use</p2> </center>
 
 		<br><hr>
 
 		<center>
+<<<<<<< HEAD
+=======
+				
+>>>>>>> romandr
 
 					<a href="#topDiv"></a>
 					<div id="botDiv"></div>
