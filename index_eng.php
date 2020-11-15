@@ -102,7 +102,7 @@
  				}
 
 				
-			echo '<h1>Info</h1>
+			echo '<center><h1>Info</h1>
 
 <p id="two">The network calculator calculates the network address, broadcast address, number of hosts, and range of valid addresses in the network. To calculate this data, specify the hosts IP address and network mask.
 The network mask must be specified in the following format: XXX. XXX. XXX. X. You can also specify this data in "CIDR notation".
@@ -203,29 +203,12 @@ The bits at the beginning indicate the network class. If the network is located 
 		<br><hr>
 
 		<center>
-				
-				<h1>IP калькулятор через форму IPv4</h1>
-					<form method="post" action="<?php print $_SERVER['PHP_SELF'] ?> ">
-					<BR><BR>
-					<table width="95%" align=center cellpadding=2 cellspacing=2 border=0>
 
-					<BR>
-					<table>
-					  <tr>
-					        <td>IP & Mask or CIDR:&nbsp;&nbsp;<br> </td>
-					        <td><input type="text" name="my_net_info" value="" size="31" maxlength="32"></td>
-					        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Start" name="subnetcalc">
-					            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					            &nbsp;</td>
-					  </tr>
-					</table>
 					<a href="#topDiv"></a>
 					<div id="botDiv"></div>
-				</form><br>
+				</form>
 						
-			<?php
-				require_once ("main_eng.php");
-			?>
+
 		</main>
 
 	</body>

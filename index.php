@@ -57,7 +57,7 @@
 					<li><a href="blog_eng.php">Блог</a></li>
 					<li>
 						<a href="#0" class="cd-subnav-trigger"><span>Языковое меню</span></a>
-						<ul>
+						<ul>				
 							<li class="go-back"><a href="#0">Меню</a></li>
 							<li><a href="index.php">Русский</a></li>
 							<li><a href="index_eng.php">Английский</a></li>
@@ -202,26 +202,11 @@
 
 		<center>
 				
-				<h1>IP калькулятор через форму IPv4</h1>
-					<form method="post" action="<?php print $_SERVER['PHP_SELF'] ?> ">
-					
 
-					<table width="95%" align=center cellpadding=2 cellspacing=2 border=0>
-
-					
-					<table>
-					  <tr>
-					        <td><b>IP адрес и Маска сети  или безклассовый адрес (CIDR):</b>&nbsp;&nbsp;<br> </td>
-					        <td><input type="text" name="my_net_info" value="" size="31" maxlength="32"></td>
-					        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Start" name="subnetcalc">
-					            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					            &nbsp;</td>
-					  </tr>
-					</table>
 					<a href="#topDiv"></a>
 					<div id="botDiv"></div>
-				</form><br>
-				<?php require_once ("main_rus.php");?>		
+				</form>
+	
 			</main>
 
 			
