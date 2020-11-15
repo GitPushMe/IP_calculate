@@ -104,13 +104,24 @@
 			echo '<br> Inserted data: <b>' ,"$dq_host",'</b>';
 			echo '<br> Network mask length (CIDR): /<b>' ,"$cdr_nmask",'</b>';
 			echo '<br>';
-			echo '<br> Data: </b>';
-			echo '<br> Subnet mask: <b>' ,''.bintodq($bin_nmask)."",'</b>';
-			echo '<br> Network address: <b>',''.bintodq($bin_net).'','</b>';
-			echo '<br> Gateway address by default (default gateway): <b>' ,''.bintodq($bin_first).'','</b>';
+			echo '<br> Data: (In decimal format) </b>';
+			echo '<br> Subnet mask: <b>' ,''.bintodq($bin_nmask)."", '</b>';
+			echo '<br> Network address: <b>',''.bintodq($bin_net)."", '</b>';
+			echo '<br> Gateway address by default (default gateway): <b>' ,''.bintodq($bin_first)."",'</b>';
 			echo '<br> Minimum IP on the client: <b>' ,''.bintodq($bin_first_client).'','</b>';
 			echo '<br> Мaximum IP on the client: <b>' ,''.bintodq($bin_last).'','</b>';
 			echo '<br> A broadcast address (broadcast): <b>' ,''.bintodq($bin_bcast).'','</b>';
+			echo '<br> Count of public network addresses: <b>' ,"$host_total",'</b>';
+			echo '<br> Count of public addresses on the client: <b>' ,"$host_total"-1,'</b>';
+
+			echo '<br>';
+			echo '<br> Data: (In binary format) </b>';
+			echo '<br> Subnet mask: <b>' , chunk_split($bin_nmask, 8, '.'),'</b>';
+			echo '<br> Network address: <b>', chunk_split($bin_net, 8, '.'),'</b>';
+			echo '<br> Gateway address by default (default gateway): <b>' , chunk_split($bin_first, 8, '.'),'</b>';
+			echo '<br> Minimum IP on the client: <b>' , chunk_split($bin_first_client, 8, '.'),'</b>';
+			echo '<br> Мaximum IP on the client: <b>' , chunk_split($bin_last, 8, '.'),'</b>';
+			echo '<br> A broadcast address (broadcast): <b>' , chunk_split($bin_bcast, 8, '.'),'</b>';
 			echo '<br> Count of public network addresses: <b>' ,"$host_total",'</b>';
 			echo '<br> Count of public addresses on the client: <b>' ,"$host_total"-1,'</b>';
 

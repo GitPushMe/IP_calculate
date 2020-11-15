@@ -104,13 +104,24 @@
 			echo '<br> Введенный адрес: <b>' ,"$dq_host",'</b>';
 			echo '<br> Длина маски сети (CIDR): /<b>' ,"$cdr_nmask",'</b>';
 			echo '<br>';
-			echo '<br> Данные: </b>';
-			echo '<br> Маска подсети: <b>' ,''.bintodq($bin_nmask)."",'</b>';
-			echo '<br> Адрес сети: <b>',''.bintodq($bin_net).'','</b>';
-			echo '<br> Адрес шлюза по умолчанию (default gateway): <b>' ,''.bintodq($bin_first).'','</b>';
+			echo '<br> Данные: (В десятичном формате) </b>';
+			echo '<br> Маска подсети: <b>' ,''.bintodq($bin_nmask)."", '</b>';
+			echo '<br> Адрес сети: <b>',''.bintodq($bin_net)."", '</b>';
+			echo '<br> Адрес шлюза по умолчанию (default gateway): <b>' ,''.bintodq($bin_first)."",'</b>';
 			echo '<br> Минимальный IP на стороне клиента: <b>' ,''.bintodq($bin_first_client).'','</b>';
 			echo '<br> Максимальный IP на стороне клиента: <b>' ,''.bintodq($bin_last).'','</b>';
 			echo '<br> Адрес широковещательной рассылки (broadcast): <b>' ,''.bintodq($bin_bcast).'','</b>';
+			echo '<br> Количество публичных адресов сети: <b>' ,"$host_total",'</b>';
+			echo '<br> Количество публичных адресов на стороне клиента: <b>' ,"$host_total"-1,'</b>';
+
+			echo '<br>';
+			echo '<br> Данные: (В двоичном формате) </b>';
+			echo '<br> Маска подсети: <b>' , chunk_split($bin_nmask, 8, '.'),'</b>';
+			echo '<br> Адрес сети: <b>', chunk_split($bin_net, 8, '.'),'</b>';
+			echo '<br> Адрес шлюза по умолчанию (default gateway): <b>' , chunk_split($bin_first, 8, '.'),'</b>';
+			echo '<br> Минимальный IP на стороне клиента: <b>' , chunk_split($bin_first_client, 8, '.'),'</b>';
+			echo '<br> Максимальный IP на стороне клиента: <b>' , chunk_split($bin_last, 8, '.'),'</b>';
+			echo '<br> Адрес широковещательной рассылки (broadcast): <b>' , chunk_split($bin_bcast, 8, '.'),'</b>';
 			echo '<br> Количество публичных адресов сети: <b>' ,"$host_total",'</b>';
 			echo '<br> Количество публичных адресов на стороне клиента: <b>' ,"$host_total"-1,'</b>';
 
