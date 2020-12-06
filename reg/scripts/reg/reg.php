@@ -1,9 +1,5 @@
 <?php
- /**
- * Обработчик формы регистрации
- * Site: http://bezramok-tlt.ru
- * Регистрация пользователя письмом
- */
+
  
  //Ключ защиты
  if(!defined('BEZ_KEY'))
@@ -135,7 +131,7 @@
 				sendMessageMail($_POST['email'], BEZ_MAIL_AUTOR, $title, $message);*/
 				
 				//Сбрасываем параметры
-				header('Location:'. BEZ_HOST .'?mode=auth');
+				header('Location:'.BEZ_HOST.'?mode=auth');
 				exit;
 			}
 		}
