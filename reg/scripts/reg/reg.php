@@ -44,8 +44,8 @@
 		$res = mysqlQuery($sql);
 		
 		//Отправляем письмо для активации
-		$title = 'Ваш аккаунт на http://bezramok-tlt.ru успешно активирован';
-		$message = 'Поздравляю Вас, Ваш аккаунт на http://bezramok-tlt.ru успешно активирован';
+		$title = 'Ваш аккаунт успешно активирован';
+		$message = 'Поздравляю Вас, Ваш аккаунт успешно активирован';
 			
 		sendMessageMail($email, BEZ_MAIL_AUTOR, $title, $message);
 			
