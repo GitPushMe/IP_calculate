@@ -141,6 +141,15 @@ if (empty($_REQUEST['network'])){
 	exit ;
 }
 
+if (! mb_ereg('(((^|:)([0-9a-fA-F]{0,4})){1,8}(/[0-9]{1,2}))$',$_REQUEST['network'])){
+//if (! mb_ereg("((^|:)([0-9a-fA-F]{0,4})){1,8}", $_REQUEST['network'])){
+		tr("Неверно введены данные.");
+		tr('Используйте IP адрес и CIDR сетевую маску:&nbsp;', '2002:4559:1fe2::4559:1fe2/56');
+		print $end ;
+		exit ;
+	}
+
+
 function tr(){
 	echo "\t<tr>";
 	for($i=0; $i<func_num_args(); $i++) echo "<td>".func_get_arg($i)."</td>";
