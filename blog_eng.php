@@ -57,7 +57,7 @@
 			<article> 
 		 		<!-- content -->
 		 		<?php
-		 				
+		 				ini_set('display_errors','off');
 						require_once dirname(__FILE__).'/conf_bd.php';
 
 						$counter = mysql_query('SELECT COUNT(`id`) FROM `blog`');

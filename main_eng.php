@@ -1,5 +1,6 @@
 <!-- Author: GitPusmMe (nikita.demin.1996@index.ru) -->
 <?php	
+		ini_set('display_errors','off');
 			//Start table
 			print "<table cellpadding=\"2\">\n<COL span=\"4\" align=\"left\">\n" ;
 

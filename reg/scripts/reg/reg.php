@@ -1,5 +1,5 @@
 <?php
-
+ini_set('display_errors','off');
  
  //Ключ защиты
  if(!defined('BEZ_KEY'))

@@ -2,7 +2,7 @@
  /**
  * Подключение к базе данных
  */
-
+ini_set('display_errors','off');
  //Ключ защиты
  if(!defined('BEZ_KEY'))
  {
