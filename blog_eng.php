@@ -42,7 +42,7 @@
 						<a href="#0" class="cd-subnav-trigger"><span>Language menu</span></a>
 						<ul>
 							<li class="go-back"><a href="#0">Menu</a></li>
-							<li><a href="index_rus.php">Russian</a></li>
+							<li><a href="index.php">Russian</a></li>
 							<li><a href="index_eng.php">English</a></li>
 							<li><a href="#0"></a></li>
 							<li><a href="#0" class="placeholder">Placeholder</a></li>
