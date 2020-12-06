@@ -157,7 +157,7 @@ function tr(){
 }
 
 
-ini_set('display_errors',1);
+ini_set('display_errors','off');
 
 $maxSubNets = '2048'; // Stop memory leak from invalid input or large ranges
 
