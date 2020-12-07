@@ -4,9 +4,9 @@
 *.pdf
 *.xls
 
-/src/config.ini
-/src/conf_bd.php
-/src/img/*
-/Images_TZ/*
-/Tests/*
+#/src/config.ini
+#/src/conf_bd.php
+#/src/img/*
+#/Images_TZ/*
+#/Tests/*
 /private/*
